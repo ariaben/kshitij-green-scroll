@@ -16,9 +16,15 @@ const AboutSection = () => {
               alternative to traditional fuels without compromising on power or performance.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
+              Our biomass pellets are manufactured from 100% natural agricultural and forestry residues, 
+              including sawdust, wood chips, and agricultural waste. Each pellet is compressed under 
+              high pressure without any chemical binders, ensuring a pure, consistent fuel source.
+            </p>
+            <p className="text-lg text-muted-foreground leading-relaxed">
               With state-of-the-art manufacturing processes and stringent quality controls, 
-              we ensure every pellet meets the highest industry standards for consistency, 
-              efficiency, and environmental responsibility.
+              we ensure every pellet meets the highest industry standards. Our pellets are uniform 
+              in size (6-10mm), have minimal dust content, and provide consistent heat output with 
+              significantly lower emissions compared to fossil fuels.
             </p>
             
             {/* Stats */}

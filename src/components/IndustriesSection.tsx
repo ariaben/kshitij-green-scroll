@@ -4,27 +4,31 @@ import industrialBoiler from "@/assets/industrial-boiler.jpg";
 const industries = [
   {
     icon: Building2,
-    title: "Hotels",
-    description: "Efficient heating solutions for hospitality industry with consistent hot water and space heating",
-    features: ["Hot Water Systems", "Space Heating", "Cost Savings", "Eco-Friendly"]
+    title: "Hotels & Resorts",
+    description: "Power your hospitality operations with our biomass pellets for efficient space heating, hot water systems, and kitchen steam requirements. Reduce operational costs by up to 40% compared to LPG while maintaining consistent guest comfort.",
+    features: ["Central Heating Systems", "Hot Water Boilers", "Kitchen Steam Generation", "Swimming Pool Heating"],
+    details: "Our pellets integrate seamlessly with modern hotel boiler systems, providing 24/7 reliable heat output perfect for guest rooms, lobbies, and service areas."
   },
   {
     icon: Hospital,
-    title: "Hospitals",
-    description: "Reliable energy source for healthcare facilities requiring 24/7 heating and hot water",
-    features: ["Continuous Operation", "Medical Grade Heating", "Emergency Backup", "Low Emissions"]
+    title: "Healthcare Facilities",
+    description: "Meet the critical heating demands of hospitals and medical centers with our clean-burning pellets. Ensure uninterrupted heating for patient care areas, sterilization processes, and hot water supply with zero compromise on reliability.",
+    features: ["Sterilization Steam", "Patient Room Heating", "Hot Water Supply", "Emergency Backup Systems"],
+    details: "Hospitals require consistent, clean energy. Our low-ash pellets ensure minimal maintenance while meeting strict emission standards for healthcare environments."
   },
   {
     icon: Factory,
-    title: "Food Manufacturing",
-    description: "Clean burning fuel for food processing plants with stringent hygiene requirements",
-    features: ["Process Heating", "Steam Generation", "Food Safe", "Quality Control"]
+    title: "Food Processing",
+    description: "Fuel your food manufacturing operations with our food-grade biomass pellets. Perfect for drying, cooking, pasteurization, and packaging processes while maintaining the highest hygiene standards required in food production.",
+    features: ["Food Drying Systems", "Steam Generation", "Cooking Processes", "Packaging Heat Sealing"],
+    details: "Our pellets are certified for food-grade applications, producing clean heat without contamination risks, ideal for dairy, grain processing, and packaged food industries."
   },
   {
     icon: Beaker,
-    title: "Chemical Industries",
-    description: "High-temperature applications for chemical processing with consistent heat output",
-    features: ["High Temperature", "Consistent Heat", "Process Reliability", "Reduced Costs"]
+    title: "Chemical & Pharma",
+    description: "Support your chemical manufacturing processes with our high-calorific biomass pellets. Ideal for reaction heating, distillation columns, and process steam generation while reducing your carbon footprint and operational costs.",
+    features: ["Process Heating", "Distillation Systems", "Reaction Vessels", "Utility Steam"],
+    details: "Chemical plants benefit from our consistent heat output and low sulfur content, ensuring process stability and reduced equipment corrosion compared to coal or furnace oil."
   }
 ];
 
@@ -64,8 +68,8 @@ const IndustriesSection = () => {
                     {industry.description}
                   </p>
                   
-                  {/* Features */}
-                  <div className="grid grid-cols-2 gap-2">
+                  {/* Applications */}
+                  <div className="grid grid-cols-2 gap-2 mb-4">
                     {industry.features.map((feature, featureIndex) => (
                       <div 
                         key={featureIndex}
@@ -76,6 +80,11 @@ const IndustriesSection = () => {
                       </div>
                     ))}
                   </div>
+                  
+                  {/* Industry Details */}
+                  <p className="text-sm text-muted-foreground/80 italic border-l-2 border-primary/20 pl-3">
+                    {industry.details}
+                  </p>
                 </div>
               </div>
             </div>
